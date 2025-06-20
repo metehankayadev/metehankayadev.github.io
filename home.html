@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <a href="/index.html" class="retro-btn top-left-btn" title="Back to Navbar">
+    <i class="fas fa-arrow-left"></i> Back
+  </a>
+  <div class="home-section">
+    <div class="profile-area">
+      <img src="/behzatçpp.jpg  " alt="Metehan Kaya" class="profile-pic">
+      <div class="profile-info">
+        <h2>Metehan Kaya</h2>
+        <p class="about-short">
+          <span class="pixel-heart">🎮</span>
+          Game Developer
+        </p>
+        <div class="social-links">
+          <a href="https://github.com/" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="mailto:mail@ornek.com" title="Mail"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="about-box">
+      <h3>About Me</h3>
+      <p>
+        Merhaba! Ben Metehan, teknoloji ve yazılıma meraklı 15 yaşında bir öğrenciyim. Kendimi sürekli geliştirmeyi seviyorum ve özellikle oyun geliştirme ile yapay zeka alanlarına ilgi duyuyorum. Öğrenmeye açık, yaratıcı ve tutkulu biriyim.
+      </p>
+    </div>
+    <div class="pixel-character">
+      <svg width="64" height="64" viewBox="0 0 32 32">
+        <!-- Kafa -->
+        <rect x="10" y="2" width="12" height="8" fill="#F6EB14"/>
+        <!-- Gözler -->
+        <rect x="13" y="5" width="2" height="2" fill="#222"/>
+        <rect x="17" y="5" width="2" height="2" fill="#222"/>
+        <!-- Ağız -->
+        <rect x="15" y="8" width="2" height="1" fill="#222"/>
+        <!-- Gövde -->
+        <rect x="9" y="10" width="14" height="10" fill="#4FAF44"/>
+        <!-- Kemer -->
+        <rect x="9" y="16" width="14" height="2" fill="#222"/>
+        <!-- Sol kol -->
+        <rect x="5" y="12" width="4" height="8" fill="#F6EB14"/>
+        <!-- Sağ kol (kılıç tutan el) -->
+        <rect x="23" y="12" width="4" height="8" fill="#F6EB14"/>
+        <!-- Sol bacak -->
+        <rect x="11" y="20" width="3" height="8" fill="#F6EB14"/>
+        <!-- Sağ bacak -->
+        <rect x="18" y="20" width="3" height="8" fill="#F6EB14"/>
+        <!-- Ayakkabılar -->
+        <rect x="11" y="28" width="3" height="2" fill="#222"/>
+        <rect x="18" y="28" width="3" height="2" fill="#222"/>
+        <!-- Sol el (gamepad) -->
+        <rect x="4" y="18" width="2" height="2" fill="#F00"/>
+        <!-- Basit gamepad -->
+        <rect x="2" y="20" width="4" height="2" fill="#222"/>
+        <rect x="3" y="21" width="2" height="1" fill="#F6EB14"/>
+        <!-- Sağ el (kılıç sapı) -->
+        <rect x="27" y="18" width="2" height="2" fill="#888"/>
+        <!-- Kılıç kabzası (yatay koruyucu) -->
+        <rect x="26" y="17" width="4" height="1" fill="#FFD700"/>
+        <!-- Kılıç bıçağı (daha uzun ve kalın) -->
+        <rect x="28" y="7" width="1" height="10" fill="#BFE3FF"/>
+        <rect x="28" y="6" width="1" height="1" fill="#fff"/>
+        <!-- Kılıç ucu -->
+        <rect x="28" y="5" width="1" height="1" fill="#BFE3FF"/>
+      </svg>
+    </div>
+  </div>
+
+  <style>
+  @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+  html, body {
+    background: #221;
+    margin: 0;
+    min-height: 100vh;
+    overflow: hidden; /* Scroll'u kaldırır */
+  }
+  .home-section {
+    margin: 3em auto 0 auto;
+    max-width: 480px;
+    background: rgba(30,30,20,0.98);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px #000a;
+    padding: 2.5em 2em 2em 2em;
+    text-align: center;
+    color: #F6EB14;
+    font-family: 'Press Start 2P', cursive;
+    letter-spacing: 1px;
+    position: relative;
+  }
+  .profile-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    margin-bottom: 1.2em;
+  }
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #F6EB14;
+    box-shadow: 0 0 16px #000a;
+    background: #222;
+    flex-shrink: 0;
+  }
+  .profile-info h2 {
+    font-size: 1.5em;
+    margin: 0 0 0.2em 0;
+    color: #F6EB14;
+    text-shadow: 0 0 8px #000;
+  }
+  .about-short {
+    color: #4FAF44;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    line-height: 1.5;
+  }
+  .pixel-heart {
+    color: #F00;
+    font-size: 1.1em;
+    vertical-align: middle;
+  }
+  .social-links {
+    margin-top: 0.5em;
+  }
+  .social-links a {
+    color: #F6EB14;
+    margin: 0 0.3em;
+    font-size: 1.3em;
+    transition: color 0.2s, transform 0.2s;
+  }
+  .social-links a:hover {
+    color: #4FAF44;
+    transform: scale(1.2) rotate(-8deg);
+  }
+  .about-box {
+    background: rgba(34,34,17,0.85);
+    border: 2px solid #4FAF44;
+    border-radius: 10px;
+    color: #F6EB14;
+    margin: 1.5em auto 2em auto; /* Ortalamak için left/right auto */
+    padding: 1.2em 1em 1em 1em;
+    font-size: 0.95em;
+    box-shadow: 0 2px 12px #0006;
+    max-width: 350px; /* Genişliği sınırla, ortala */
+    text-align: center; /* İçeriği ortala */
+  }
+  .about-box h3 {
+    color: #4FAF44;
+    font-size: 1.1em;
+    margin-bottom: 0.7em;
+    letter-spacing: 2px;
+  }
+  .retro-btn {
+    display: inline-block;
+    background: #F6EB14;
+    color: #221;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1em;
+    padding: 0.8em 2em;
+    border-radius: 6px;
+    box-shadow: 0 4px #4FAF44, 0 0 12px #000 inset;
+    text-decoration: none;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    transition: background 0.2s, color 0.2s, transform 0.1s;
+  }
+  .retro-btn:hover {
+    background: #4FAF44;
+    color: #F6EB14;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px #222, 0 0 18px #4FAF44 inset;
+  }
+  .pixel-character {
+    margin: 2em auto 0 auto;
+    width: 64px;
+    height: 64px;
+    animation: floaty 2.5s ease-in-out infinite alternate;
+  }
+  @keyframes floaty {
+    0% { transform: translateY(0);}
+    100% { transform: translateY(-18px);}
+  }
+  .blink {
+    animation: blinkAnim 1.2s infinite steps(1, end);
+  }
+  @keyframes blinkAnim {
+    0%, 90%, 100% { opacity: 1; }
+    92%, 98% { opacity: 0; }
+  }
+  .top-left-btn {
+    position: fixed;
+    top: 32px;
+    left: 32px;
+    z-index: 100;
+    margin: 0;
+    padding: 0.7em 1.5em;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    gap: 0.7em;
+  }
+  .top-left-btn i {
+    font-size: 1.1em;
+    margin-right: 0.5em;
+  }
+  @media (max-width: 600px) {
+    html, body {
+      overflow: hidden;
+    }
+    .home-section {
+      padding: 1.2em 0.5em 1em 0.5em;
+      max-width: 98vw;
+    }
+    .profile-area {
+      flex-direction: column;
+      gap: 0.7em;
+    }
+    .profile-pic { width: 70px; height: 70px; }
+    .profile-info h2 { font-size: 1.1em; }
+    .about-box { font-size: 0.85em; }
+    .retro-btn { font-size: 0.8em; padding: 0.7em 1.2em; }
+    .pixel-character { width: 48px; height: 48px; }
+    .top-left-btn {
+      top: 12px;
+      left: 8px;
+      font-size: 0.85em;
+      padding: 0.5em 1em;
+    }
+  }
+  </style>
+  <!-- FontAwesome CDN (ikonlar için) -->
+  <script src="https://kit.fontawesome.com/4b2e1e6e8b.js" crossorigin="anonymous"></script>
+</body>
+</html>

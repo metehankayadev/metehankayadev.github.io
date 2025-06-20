@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Navbar</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 1rem;
+      line-height: 2;
+      height: 100vh;
+      background-color: #221;
+      text-transform: uppercase;
+    }
+
+    ol {
+      padding-left: 2.5em;
+    }
+
+    li {
+      color: #4FAF44;
+      margin: 1em 0;
+      list-style-position: inside;
+      position: relative;
+      font-size: 1.5em; /* Linkleri büyüt */
+    }
+
+    a.arrow {
+      color: #F6EB14;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 1em;
+      font-weight: 700;
+      position: relative;
+      font-size: 1.3em; /* Linkleri büyüt */
+      padding: 0.4em 0.8em;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    /* Okları başta gizle */
+    a.arrow i {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      font-size: 2em; /* Oku büyüt */
+      position: absolute;
+      left: -2.8em;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    /* Hoverda sadece o satırdaki okun görünmesi */
+    a.arrow:hover i {
+      opacity: 1;
+    }
+
+    /* Hoverda linkin arkaplan hafif değişsin */
+    a.arrow:hover {
+      background-color: rgba(0,0,0,0.2);
+      cursor: pointer;
+      border-radius: 4px;
+      padding: 0 0.6em;
+    }
+
+    /* Mobil uyum */
+    @media (max-width: 600px) {
+      html, body {
+        font-size: 0.9rem;
+        padding: 0;
+      }
+      ol {
+        padding-left: 1.2em;
+      }
+      li {
+        font-size: 1.2em;
+      }
+      a.arrow {
+        font-size: 1.1em;
+        padding: 0.7em 0.8em;
+      }
+      a.arrow i {
+        font-size: 1.5em;
+        left: -2.2em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <ol>
+    <li><a href="/home.html" class="arrow"><i class="fas fa-arrow-right"></i>Home</a></li>
+    <li><a href="/projects.html" class="arrow"><i class="fas fa-arrow-right"></i>Project</a></li>
+    <li><a href="/blog.html" class="arrow"><i class="fas fa-arrow-right"></i>Blog</a></li>
+    <li><a href="/contact.html" class="arrow"><i class="fas fa-arrow-right"></i>Contact</a></li>
+  </ol>
+</body>
+</html>

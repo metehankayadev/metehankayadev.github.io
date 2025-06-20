@@ -1,0 +1,86 @@
+<body>
+  <a href="/index.html" class="back-btn" title="Back to Navbar">
+    <i class="fas fa-arrow-left"></i> Back
+  </a>
+  <div class="coming-soon-section">
+    <span class="soon-text">YAKINDA!</span>
+  </div>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+    body {
+      background: #221;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5em;
+      background: #F6EB14;
+      color: #221;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 1em;
+      padding: 0.7em 1.5em;
+      border-radius: 6px;
+      box-shadow: 0 4px #4FAF44, 0 0 12px #000 inset;
+      text-decoration: none;
+      margin-bottom: 1.5em;
+      transition: background 0.2s, color 0.2s, transform 0.1s;
+      position: absolute;
+      top: 32px;
+      left: 32px;
+      z-index: 100;
+    }
+    .back-btn i {
+      font-size: 1.1em;
+    }
+    .back-btn:hover {
+      background: #4FAF44;
+      color: #F6EB14;
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 8px #222, 0 0 18px #4FAF44 inset;
+    }
+    .coming-soon-section {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .soon-text {
+      font-family: 'Press Start 2P', cursive;
+      color: #F6EB14;
+      font-size: 2.5em;
+      letter-spacing: 0.1em;
+      text-shadow: 0 0 18px #000, 0 2px 0 #4FAF44;
+      background: rgba(34,34,17,0.85);
+      padding: 1em 2em;
+      border-radius: 16px;
+      border: 2px solid #4FAF44;
+      box-shadow: 0 8px 32px #000a;
+      animation: blinkText 1.2s infinite steps(1, end);
+    }
+    @keyframes blinkText {
+      0%, 90%, 100% { opacity: 1; }
+      92%, 98% { opacity: 0.4; }
+    }
+    @media (max-width: 600px) {
+      .soon-text {
+        font-size: 1.2em;
+        padding: 0.7em 1em;
+      }
+      .back-btn {
+        top: 12px;
+        left: 8px;
+        font-size: 0.85em;
+        padding: 0.5em 1em;
+      }
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/4b2e1e6e8b.js" crossorigin="anonymous"></script>
+</body>
